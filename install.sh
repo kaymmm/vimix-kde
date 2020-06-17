@@ -68,7 +68,7 @@ install() {
   fi
 
   local AURORAE_THEME="${AURORAE_DIR}/${name}${color}${theme}"
-  local PLASMA_THEME="${PLASMA_DIR}/${name}${theme}"
+  local PLASMA_THEME="${PLASMA_DIR}/${name}${color}${theme}"
   local LOOKFEEL_THEME="${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${color}${theme}"
   local SCHEMES_THEME="${SCHEMES_DIR}/${name}${a_color}${a_theme}.colors"
   local KVANTUM_THEME="${KVANTUM_DIR}/${name}${color}${theme}"
@@ -87,9 +87,9 @@ install() {
 
   cp -ur ${SRC_DIR}/color-schemes/${name}${a_color}${a_theme}.colors                    ${SCHEMES_DIR}
   cp -ur ${SRC_DIR}/Kvantum/${name}${color}${theme}                                     ${KVANTUM_DIR}
-  cp -ur ${SRC_DIR}/plasma/desktoptheme/${name}${theme}                                 ${PLASMA_DIR}
-  cp -ur ${SRC_DIR}/plasma/desktoptheme/icons                                           ${PLASMA_THEME}
-  cp -ur ${SRC_DIR}/color-schemes/${name}Dark${a_theme}.colors                          ${PLASMA_THEME}/colors
+  cp -ur ${SRC_DIR}/plasma/desktoptheme/${name}${color}${theme}                         ${PLASMA_DIR}
+  cp -ur ${SRC_DIR}/plasma/desktoptheme/icons${color}                                   ${PLASMA_THEME}/icons
+  cp -ur ${SRC_DIR}/color-schemes/${name}${a_color}${a_theme}.colors                    ${PLASMA_THEME}/colors
   cp -ur ${SRC_DIR}/plasma/look-and-feel/com.github.vinceliuice.${name}${color}${theme} ${LOOKFEEL_DIR}
 
   [[ ${blur} = 'true' ]] && \
@@ -142,7 +142,7 @@ while [[ $# -gt 0 ]]; do
             break
             ;;
           *)
-            echo "ERROR: Unrecognized thin variant '$1'."
+            echo "ERROR: Unrecognized theme variant '$1'."
             echo "Try '$0 --help' for more information."
             exit 1
             ;;

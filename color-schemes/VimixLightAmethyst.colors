@@ -34,9 +34,9 @@ ForegroundVisited=224,64,251
 
 [Colors:Complementary]
 BackgroundAlternate=54,57,62
-DecorationFocus=137,46,179
-DecorationHover=79,83,91
 ForegroundVisited=224,64,251
+DecorationFocus=137,46,179
+DecorationHover=137,46,179
 
 [Colors:Selection]
 BackgroundAlternate=54,213,179
