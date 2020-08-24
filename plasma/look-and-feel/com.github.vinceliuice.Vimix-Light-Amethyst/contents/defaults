@@ -5,10 +5,10 @@ widgetStyle=kvantum
 ColorScheme=VimixLightAmethyst
 
 [kdeglobals][Icons]
-Theme=Vimix-Amethyst
+Theme=Qogir
 
 [plasmarc][Theme]
-name=Vimix-Amethyst
+name=Vimix-Light-Amethyst
 
 [kwinrc][org.kde.kdecoration2]
 ButtonsOnLeft=
@@ -17,4 +17,4 @@ library=org.kde.kwin.aurorae
 theme=__aurorae__svg__Vimix-Light
 
 [kcminputrc][Mouse]
-cursorTheme=breeze_cursors
+cursorTheme=vimix_cursors
